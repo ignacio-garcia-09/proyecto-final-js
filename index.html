@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="limpiar()">C</button>
+            <button id="borrar">Borrar</button>
+            <button id="cerrarParentesis">)</button>
+            <button onclick="operacion('/')">/</button>
+            <button onclick="concatenar('7')">7</button>
+            <button onclick="concatenar('8')">8</button>
+            <button onclick="concatenar('9')">9</button>
+            <button onclick="operacion('*')">*</button>
+            <button onclick="concatenar('4')">4</button>
+            <button onclick="concatenar('5')">5</button>
+            <button onclick="concatenar('6')">6</button>
+            <button onclick="operacion('-')">-</button>
+            <button onclick="concatenar('1')">1</button>
+            <button onclick="concatenar('2')">2</button>
+            <button onclick="concatenar('3')">3</button>
+            <button onclick="operacion('+')">+</button>
+            <button onclick="concatenar('0')">0</button>
+            <button onclick="concatenar('.')">.</button>
+            <button onclick="calcular()">=</button>
+            <button id="sqrt">√</button>
+            <button id="cbrt">³√x</button>
+            <button id="power">x^y</button>
+            <button id="log">log</button>
+            <button id="sin">sin</button>
+            <button id="cos">cos</button>
+            <button id="tan">tan</button>
+            <button id="negativo">+/-</button>
+            <button onclick="calcularHistorial()">Historial</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
